@@ -7,8 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="/aspen"><img src="img/ragdoll.jpg" alt="Ragdoll"></a>
-    <a href="/ankou"><img src="img/ankou.jpg" alt="Tuxedo"></a>
-    <a href="/tymber"><img src="img/tymberish.jpg" alt="Beautiful Cat"></a>
+    <h1>Detail Page for <%= cat.name %></h1>
+    <h3>Favorite Food: <%= cat.favFood %></h3>
+    <h3>Age: <%= cat.age %></h3>
+    <h3>Sleeping Spots: </h3>
+    <% for(var c in cat.sleep) { %>
+        <p><%= cat.sleep[c] %></p>
+    <% } %>
 </body>
 </html>
